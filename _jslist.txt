@@ -1,6 +1,7 @@
 ajax.js
 showads.js
 base64.js
+CookieMonster.user.js
 DungeonGen.js
 dungeons.js
 excanvas.compiled.js
