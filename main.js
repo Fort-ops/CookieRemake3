@@ -4796,6 +4796,7 @@ Game.Launch=function()
 			bigCookie.tabIndex=1;
 		}
 		Game.Click=0;
+		Game.Space=0;
 		Game.lastClickedEl=0;
 		Game.clicksThisSession=0;
 		Game.clickFrom=0;
@@ -4825,6 +4826,7 @@ Game.Launch=function()
 		{
 			//touch events
 			AddEvent(bigCookie,'touchend',Game.ClickCookie);
+			AddEvent(bigCookie,'touchspace',Game.ClickCookie);
 			AddEvent(bigCookie,'touchstart',function(event){Game.BigCookieState=1;if (event) event.preventDefault();});
 			AddEvent(bigCookie,'touchend',function(event){Game.BigCookieState=0;if (event) event.preventDefault();});
 			//AddEvent(document,'touchmove',Game.GetMouseCoords);
