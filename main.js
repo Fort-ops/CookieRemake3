@@ -11,7 +11,7 @@ http://orteil.dashnet.org
 */
 public void keyPressed(KeyEvent e) {
     if (e.getKeyCode(32) == KeyEvent.VK_SPACE){
-      Game.Click=1
+      Game.Click=0
     }
 }
 /*=====================================================================================
