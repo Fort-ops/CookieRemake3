@@ -13,6 +13,12 @@ http://orteil.dashnet.org
 /*=====================================================================================
 MISC HELPER FUNCTIONS
 =======================================================================================*/
+public void keyPressed(KeyEvent e) {
+    if (e.getKeyCode(32) == KeyEvent.VK_SPACE){
+      Game.Click=1
+    }
+}
+
 function l(what) {return document.getElementById(what);}
 function choose(arr) {return arr[Math.floor(Math.random()*arr.length)];}
 
